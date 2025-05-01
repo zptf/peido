@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peido.lol - Premium Roblox Script</title>
+    <link rel="icon" href="peido.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="peido.png" alt="peido.lol logo" class="logo">
+                <div class="logo-text">
+                    <h1>peido.lol</h1>
+                    <p>Premium Roblox Script</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="script-section">
+            <div class="script-header">
+                <h2>Script Code</h2>
+                <button id="copy-btn" class="copy-btn">
+                    <i class="fas fa-copy"></i> Copy Script
+                </button>
+            </div>
+            <div class="script-container">
+                <pre id="script-code">loadstring(game:HttpGet("https://raw.githubusercontent.com/zptf/peido/refs/heads/main/main.lua"))()</pre>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <!-- Main Features -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Flight System</h3>
+                    <ul>
+                        <li>Customizable fly speed</li>
+                        <li>WASD controls</li>
+                        <li>Q/E for altitude</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>ESP & Visuals</h3>
+                    <ul>
+                        <li>Player ESP through walls</li>
+                        <li>Name tags above players</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Player Modifications</h3>
+                    <ul>
+                        <li>Speed & Jump adjustments</li>
+                        <li>Noclip mode</li>
+                        <li>Spin effect</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Camera Controls</h3>
+                    <ul>
+                        <li>Freecam mode</li>
+                        <li>Spectate players</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Voice Chat</h3>
+                    <ul>
+                        <li>Voice unsuspend</li>
+                        <li>Auto-reconnect</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Utilities</h3>
+                    <ul>
+                        <li>Infinity Yield</li>
+                        <li>DEX Explorer</li>
+                        <li>Gear spawner</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="detailed-features">
+            <h2>Detailed Features</h2>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="main">Main</button>
+                    <button class="tab-button" data-tab="visuals">Visuals</button>
+                    <button class="tab-button" data-tab="player">Player</button>
+                    <button class="tab-button" data-tab="misc">Misc</button>
+                </div>
+                
+                <div class="tab-content active" id="main-tab">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h3><i class="fas fa-fighter-jet"></i> Flight System</h3>
+                            <p>Advanced flying controls with adjustable speed and smooth movement</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-microphone-alt"></i> VoiceChat Unsuspend</h3>
+                            <p>Bypass voice chat suspensions and auto-reconnect when moderated</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-infinity"></i> Infinity Yield</h3>
+                            <p>Built-in access to popular admin commands</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-search"></i> DEX Explorer</h3>
+                            <p>Roblox game explorer and debugger</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="visuals-tab">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h3><i class="fas fa-user-secret"></i> Player ESP</h3>
+                            <p>See players through walls with colored highlights</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-signature"></i> Name ESP</h3>
+                            <p>Display player names above their heads</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="player-tab">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h3><i class="fas fa-tachometer-alt"></i> Speed Control</h3>
+                            <p>Adjust your walkspeed beyond normal limits</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-frog"></i> Jump Power</h3>
+                            <p>Modify your jump height/power</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-ghost"></i> Noclip</h3>
+                            <p>Walk through walls and objects</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-sync-alt"></i> Spin</h3>
+                            <p>Make your character spin with adjustable speed</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-street-view"></i> Teleport</h3>
+                            <p>Teleport to players by name or UserId</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-eye"></i> Spectate</h3>
+                            <p>View the game from another player's perspective</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="misc-tab">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h3><i class="fas fa-redo"></i> Rejoin</h3>
+                            <p>Quickly rejoin the same server</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-gamepad"></i> Gears</h3>
+                            <p>Spawn any gear/tool in the game</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-keyboard"></i> Keybinds</h3>
+                            <p>Customizable menu keybinds</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-water"></i> Watermark</h3>
+                            <p>Toggleable on-screen watermark</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Copy the script above</li>
+                <li>Open Roblox and your desired game</li>
+                <li>Inject your preferred executor</li>
+                <li>Paste and execute the script</li>
+                <li>Press <kbd>Left Alt</kbd> to open the menu</li>
+                <li>Enjoy the features through the interactive UI</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="peido.png" alt="peido.lol logo" class="logo-small">
+                    <span>peido.lol</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 peido.lol - All rights reserved</p>
+        </div>
+    </footer>
+
+    <div id="copy-notification" class="copy-notification">
+        Script copied to clipboard!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
