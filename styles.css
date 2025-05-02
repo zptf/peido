@@ -535,3 +535,70 @@ footer {
 .sponsor-link:hover {
     background-color: var(--primary-dark);
 }
+
+/* Special Thanks Section */
+.special-thanks {
+    background-color: var(--light-color);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.special-thanks h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--dark-color);
+    position: relative;
+}
+
+.special-thanks h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.thanks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.thanks-item {
+    background-color: var(--secondary-color);
+    padding: 1.25rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.thanks-item:hover {
+    transform: translateY(-3px);
+}
+
+.thanks-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.75rem;
+    border: 2px solid var(--primary-color);
+}
+
+.thanks-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--dark-color);
+}
+
+.thanks-item p {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
