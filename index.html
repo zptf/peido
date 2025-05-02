@@ -35,7 +35,7 @@
         </section>
 
         <section class="features">
-            <h2>Features</h2>
+            <h2>Main Features</h2>
             <div class="features-grid">
                 <!-- Main Features -->
                 <div class="feature-card">
@@ -46,7 +46,8 @@
                     <ul>
                         <li>Customizable fly speed</li>
                         <li>WASD controls</li>
-                        <li>Q/E for altitude</li>
+                        <li>Q/E for altitude control</li>
+                        <li>Customizable keybind</li>
                     </ul>
                 </div>
 
@@ -58,6 +59,7 @@
                     <ul>
                         <li>Player ESP through walls</li>
                         <li>Name tags above players</li>
+                        <li>Customizable ESP colors</li>
                     </ul>
                 </div>
 
@@ -68,8 +70,9 @@
                     <h3>Player Modifications</h3>
                     <ul>
                         <li>Speed & Jump adjustments</li>
-                        <li>Noclip mode</li>
-                        <li>Spin effect</li>
+                        <li>Noclip mode with keybind</li>
+                        <li>Spin effect with adjustable speed</li>
+                        <li>Sit/Lay down animations</li>
                     </ul>
                 </div>
 
@@ -81,6 +84,8 @@
                     <ul>
                         <li>Freecam mode</li>
                         <li>Spectate players</li>
+                        <li>Customizable freecam keybind</li>
+                        <li>Freecam to player</li>
                     </ul>
                 </div>
 
@@ -91,7 +96,7 @@
                     <h3>Voice Chat</h3>
                     <ul>
                         <li>Voice unsuspend</li>
-                        <li>Auto-reconnect</li>
+                        <li>Auto-reconnect when moderated</li>
                     </ul>
                 </div>
 
@@ -101,9 +106,10 @@
                     </div>
                     <h3>Utilities</h3>
                     <ul>
-                        <li>Infinity Yield</li>
+                        <li>Infinity Yield admin commands</li>
                         <li>DEX Explorer</li>
-                        <li>Gear spawner</li>
+                        <li>Gear spawner (visual only)</li>
+                        <li>Chat logs system</li>
                     </ul>
                 </div>
             </div>
@@ -117,15 +123,13 @@
                     <button class="tab-button active" data-tab="main">Main</button>
                     <button class="tab-button" data-tab="visuals">Visuals</button>
                     <button class="tab-button" data-tab="player">Player</button>
+                    <button class="tab-button" data-tab="teleport">Teleport</button>
+                    <button class="tab-button" data-tab="camera">Camera</button>
                     <button class="tab-button" data-tab="misc">Misc</button>
                 </div>
                 
                 <div class="tab-content active" id="main-tab">
                     <div class="feature-list">
-                        <div class="feature-item">
-                            <h3><i class="fas fa-fighter-jet"></i> Flight System</h3>
-                            <p>Advanced flying controls with adjustable speed and smooth movement</p>
-                        </div>
                         <div class="feature-item">
                             <h3><i class="fas fa-microphone-alt"></i> VoiceChat Unsuspend</h3>
                             <p>Bypass voice chat suspensions and auto-reconnect when moderated</p>
@@ -137,6 +141,14 @@
                         <div class="feature-item">
                             <h3><i class="fas fa-search"></i> DEX Explorer</h3>
                             <p>Roblox game explorer and debugger</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-redo"></i> Rejoin</h3>
+                            <p>Quickly rejoin the same server</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-gamepad"></i> Gears</h3>
+                            <p>Spawn any gear/tool in the game (visual only)</p>
                         </div>
                     </div>
                 </div>
@@ -150,6 +162,10 @@
                         <div class="feature-item">
                             <h3><i class="fas fa-signature"></i> Name ESP</h3>
                             <p>Display player names above their heads</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-water"></i> Watermark</h3>
+                            <p>Toggleable on-screen watermark with version info</p>
                         </div>
                     </div>
                 </div>
@@ -166,19 +182,53 @@
                         </div>
                         <div class="feature-item">
                             <h3><i class="fas fa-ghost"></i> Noclip</h3>
-                            <p>Walk through walls and objects</p>
+                            <p>Walk through walls and objects with customizable keybind</p>
                         </div>
                         <div class="feature-item">
                             <h3><i class="fas fa-sync-alt"></i> Spin</h3>
                             <p>Make your character spin with adjustable speed</p>
                         </div>
                         <div class="feature-item">
-                            <h3><i class="fas fa-street-view"></i> Teleport</h3>
+                            <h3><i class="fas fa-fighter-jet"></i> Flight System</h3>
+                            <p>Advanced flying controls with adjustable speed and smooth movement</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-user-circle"></i> Poses</h3>
+                            <p>Sit and lay down animations with customizable keybinds</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="teleport-tab">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h3><i class="fas fa-street-view"></i> Teleport to Player</h3>
                             <p>Teleport to players by name or UserId</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-map-marker-alt"></i> Goto Player</h3>
+                            <p>Teleport to specific players by name</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="camera-tab">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h3><i class="fas fa-video"></i> Freecam</h3>
+                            <p>Detach camera from character with WASD controls</p>
                         </div>
                         <div class="feature-item">
                             <h3><i class="fas fa-eye"></i> Spectate</h3>
                             <p>View the game from another player's perspective</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-keyboard"></i> Freecam Keybinds</h3>
+                            <p>Customizable keybinds for freecam controls</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-user-tie"></i> Freecam to Player</h3>
+                            <p>Move freecam directly to a player's position</p>
                         </div>
                     </div>
                 </div>
@@ -186,20 +236,24 @@
                 <div class="tab-content" id="misc-tab">
                     <div class="feature-list">
                         <div class="feature-item">
-                            <h3><i class="fas fa-redo"></i> Rejoin</h3>
-                            <p>Quickly rejoin the same server</p>
-                        </div>
-                        <div class="feature-item">
-                            <h3><i class="fas fa-gamepad"></i> Gears</h3>
-                            <p>Spawn any gear/tool in the game</p>
+                            <h3><i class="fas fa-comments"></i> Chat Logs</h3>
+                            <p>Track and display all in-game chat messages</p>
                         </div>
                         <div class="feature-item">
                             <h3><i class="fas fa-keyboard"></i> Keybinds</h3>
                             <p>Customizable menu keybinds</p>
                         </div>
                         <div class="feature-item">
-                            <h3><i class="fas fa-water"></i> Watermark</h3>
-                            <p>Toggleable on-screen watermark</p>
+                            <h3><i class="fas fa-list"></i> Player List</h3>
+                            <p>View all players in the server with ranks</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-user-shield"></i> Rank System</h3>
+                            <p>Special ranks for certain users</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-power-off"></i> Destroy GUI</h3>
+                            <p>Completely remove the script's interface</p>
                         </div>
                     </div>
                 </div>
@@ -213,9 +267,12 @@
                 <li>Open Roblox and your desired game</li>
                 <li>Inject your preferred executor</li>
                 <li>Paste and execute the script</li>
-                <li>Press <kbd>Left Alt</kbd> to open the menu</li>
+                <li>Press <kbd>Right Alt</kbd> to open the menu</li>
                 <li>Enjoy the features through the interactive UI</li>
             </ol>
+            <div class="note">
+                <p><strong>Note:</strong> Some features may not work in all games due to Roblox's anti-cheat measures.</p>
+            </div>
         </section>
     </main>
 
@@ -228,6 +285,7 @@
                 </div>
                 <div class="footer-links">
                     <a href="#"><i class="fab fa-discord"></i> Discord</a>
+                    <a href="#"><i class="fas fa-globe"></i> Website</a>
                 </div>
             </div>
             <p class="copyright">&copy; 2025 peido.lol - All rights reserved</p>
